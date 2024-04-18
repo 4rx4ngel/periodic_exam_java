@@ -31,7 +31,7 @@ public class Main {
         scanner.close();
     }
 
-    public static String findLongestWords(String pathname) throws FileNotFoundException {
+    public static void findLongestWords(String pathname) throws FileNotFoundException {
         String longest_word = "";
         String current;
         Scanner scanner = new Scanner(new File(pathname));
@@ -42,7 +42,6 @@ public class Main {
             }
         }
         System.out.println(longest_word);
-        return longest_word;
     }
     public static void wordFrequency(String pathname) throws FileNotFoundException {
         Scanner scanner = new Scanner(new File(pathname));
